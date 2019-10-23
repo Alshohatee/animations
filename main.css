@@ -1,0 +1,105 @@
+body{
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+@keyframes sliderFormLeft {
+  from {
+position: relative;
+left:-5%;
+
+  }
+  to {
+left: 0%;
+  }
+
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity:1;
+
+  }
+}
+
+@keyframes filpY {
+  from {
+  transform: rotateY(0deg);
+  }
+  to{
+  transform: rotateY(180deg);
+
+  }
+}
+@keyframes filpY2 {
+  from {
+  transform: rotateY(0deg);
+  }
+  to{
+  transform: rotateY(720deg);
+
+  }
+}
+
+
+
+.imageGrid img:nth-child(1) {
+
+  /* background-color: red; this was to show the  */
+  animation-name: sliderFormLeft;
+  animation-duration: 2s;\
+  /* animation-delay: 3s; */
+}
+
+.imageGrid img:nth-child(2) {
+  /* background-color: red; this was to show the  */
+  animation-name: appear;
+  animation-duration: 5s;\
+  /* animation-delay: 3s; */
+}
+
+.imageGrid img:nth-child(3) {
+
+  /* background-color: red; this was to show the  */
+  animation-name: filpY;
+  animation-duration: 2s;\
+  /* animation-delay: 3s; */
+}
+h1 {
+
+
+}
+
+p {
+
+  /* background-color: red; this was to show the  */
+  animation-name: appear;
+  animation-duration: 2s;\
+  /* animation-delay: 3s; */
+  animation-direction: reverse;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+
+h1{
+  animation: fade 2s linear forwards;
+  /* background-color: red; this was to show the  */
+  animation-name: filpY2;
+  animation-duration: 27s;\
+  /* animation-delay: 3s; */
+  animation-direction: reverse;
+}
